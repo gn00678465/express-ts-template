@@ -12,14 +12,16 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({
-  secret: 'mysecretstring',
-  saveUninitialized: true,
-  resave: true,
-  cookie: {
-    httpOnly: true
-  }
-}));
+app.use(
+  session({
+    secret: 'mysecretstring',
+    saveUninitialized: true,
+    resave: true,
+    cookie: {
+      httpOnly: true,
+    },
+  }),
+);
 app.use(flash());
 
 app.get('/', (req: Request, res: Response) => {
