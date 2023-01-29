@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense"
+  ]
+}
